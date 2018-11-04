@@ -5,7 +5,6 @@ import (
 )
 
 func ServeWs(addr string) {
-	//go initData()
 	// 是否允许跨域请求
 	if !WsConfig.CheckOrigin {
 		upgrader.CheckOrigin = func(r *http.Request) bool {
